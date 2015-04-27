@@ -1,3 +1,10 @@
+{% extends "base.html" %}
+{%   load   staticfiles   %}  
+
+{% block elcss %}
+{% endblock %}
+
+{% block content %}
 {% if los_libros %}
 	<table border='1' style='border-collapse:collapse;'>
 	<th>Titulo</th>
@@ -16,3 +23,4 @@
 {% else %}
 	<p>no hay libros</p>
 {% endif %}			
+{% endblock %}
