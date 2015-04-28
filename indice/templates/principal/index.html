@@ -2,24 +2,22 @@
 {%   load   staticfiles   %}  
 
 {% block elcss %}
+<link   rel="stylesheet"   type="text/css"   href="{%   static  'principal/css/index.css'   %}"   />
 {% endblock %}
 
 {% block content %}
 {% if los_libros %}
-	<table border='1' style='border-collapse:collapse;'>
-	<th>Titulo</th>
-	<th>Autor</th>
-	<th>Fecha</th>
-	<th>Puntuación</th>
+	<center><h1> La lista </h1></center>
 	{% for libros in los_libros %}
-		<tr>
-			<td width='250' align='left' style='background-color:#e9e9e9'>{{ libros.titulo }}</td>
-			<td width='250' align='center'>{{ libros.autor }}</td>			
-			<td width='400' align='center'>{{ libros.fecha }}</td>
-			<td width='20' align='center'>{{ libros.puntuacion }}</td>			
-		</tr>
+		<div id="ventana_libro">
+			<div id="ventana_detalle">
+			<p class="texto_titulo">{{ libros.titulo }}</p>
+			<spam>{{ libros.autor }}</spam>
+			<spam>({{ libros.fecha | date:"d/m/Y" }})</spam>
+			<spam> --	{{ libros.puntuacion }} puntos </spam>
+			</div>	
+		</div>	
 	{% endfor %}
-	</table>
 {% else %}
 	<p>no hay libros</p>
 {% endif %}			

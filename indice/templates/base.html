@@ -6,31 +6,13 @@
 {%block elcss %}{% endblock %}
 </head>
 <body>
-	<!-- cabecera -- banner -->
-	<div id="cabecera">
-		<div id="banner">
-			<div id="banner_imagen">
-				<img src="{%static 'imagenes/logo.png' %}">
-			</div>	
-			<div id="banner_titulo">
-				<spam>Proyecto Gemina</spam>
-			</div>	
-		</div>	
-	</div>
-	<!--  cuerpo -- contenido -->
+<div id="izquierda">
+</div>
+<div id="derecha">
+<!--  cuerpo -- contenido -->
 	<div id="contenedor">
 	{% block content %} {% endblock %}
 	</div>
-	<!--  footer -->
-	<div id="tirafooter">
-		<div id="footer">
-			<div id="footer_social">
-				<a href="http://www.google.es"><img src="{%static 'imagenes/GooglePlus.png' %}"></a>
-				<a href="http://www.twitter.com"><img src="{%static 'imagenes/Twitter.png' %}"></a>
-				<a href="http://www.facebook.com"><img src="{%static 'imagenes/Facebook.png' %}"></a>
-				<a href="mailto:siga21@gmail.com"><img src="{%static 'imagenes/Email.png' %}"></a>
-			</div>
-		</div>
-	</div>
+</div>	
 </body>
 </html>	
