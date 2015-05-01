@@ -4,7 +4,14 @@
 {% block elcss %}
 <link   rel="stylesheet"   type="text/css"   href="{%   static  'principal/css/index.css'   %}"   />
 {% endblock %}
-
+<!-- esquerda -->>
+{% block esquerda %}
+	<div id="titulos">
+		<p class="titulo_grande"> indice </p>	
+		<p class="titulo_pequeno">jroca72</p>
+	</div>
+{% endblock %}
+<!---  contenifo -->
 {% block content %}
 {% if los_libros %}
 	<center><h1> La lista </h1></center>
