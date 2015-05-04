@@ -7,7 +7,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'indice.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^indice/', 'principal.views.indice', name = 'indice'),
+    url(r'^', 'principal.views.indice', name = 'indice'),
 )
 
 if settings.DEBUG:
